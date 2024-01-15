@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 ## 追加
 gem 'sorcery', "0.16.3"
+gem 'bullet'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -57,6 +58,10 @@ gem 'sorcery', "0.16.3"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # pry
+  gem "pry-byebug"
+  gem "pry-doc"
+  gem "pry-rails"
 end
 
 group :development do
