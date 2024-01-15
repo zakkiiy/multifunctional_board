@@ -6,7 +6,7 @@
         <li><a href="#" class="hover:text-blue-300 transition-colors duration-300">ホーム</a></li>
         <li><a href="#" class="hover:text-blue-300 transition-colors duration-300">掲示板</a></li>
         <li><a href="#" class="hover:text-blue-300 transition-colors duration-300">プロフィール</a></li>
-        <li><a href="#" class="hover:text-blue-300 transition-colors duration-300">コンタクト</a></li>
+        <%= link_to '投稿一覧', posts_path, class: "hover:text-blue-300 transition-colors duration-300" %>
         <%= link_to 'ログイン', login_path, class: "hover:text-blue-300 transition-colors duration-300" %>
       </ul>
     </nav>
