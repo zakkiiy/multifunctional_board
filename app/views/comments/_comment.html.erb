@@ -1,0 +1,7 @@
+<div class="mt-6">
+  <% @comments.each do |comment| %>
+    <div class="mb-4 p-4 bg-gray-100 rounded-lg shadow">
+      <p class="text-gray-600"><%= comment.body %></p>
+    </div>
+  <% end %>
+</div>

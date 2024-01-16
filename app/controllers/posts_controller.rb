@@ -5,6 +5,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new  # コメントの新規インスタンスを生成
+    @comments = @post.comments.includes(:user).order(created_at: :desc)  # 投稿に関連するコメントを取得
   end
 
   def new
