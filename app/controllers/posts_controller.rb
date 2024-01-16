@@ -45,6 +45,10 @@ class PostsController < ApplicationController
     redirect_to posts_path, success: '削除しました。', status: :see_other
   end
 
+  def bookmarks
+    @bookmarks_boards = current_user.bookmark_boads.includes(:user).order(created_at: :desc)
+  end
+
   private
 
   def post_params
